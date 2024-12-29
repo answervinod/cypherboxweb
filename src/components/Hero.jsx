@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 const HeroSection = styled.header`
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: flex-start;
   padding: 8rem 2rem;
@@ -93,7 +93,7 @@ const ContentContainer = styled(motion.div)`
   flex: 1;
   padding: 2rem;
   max-width: 800px;
-  margin-left: -100px;
+  margin-left: 0;
   margin-top: 180px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
@@ -104,7 +104,7 @@ const ContentContainer = styled(motion.div)`
 `;
 
 const Headline = styled(motion.h1)`
-  font-size: clamp(2.5rem, 3vw, 3rem);
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
   font-weight: bold;
   margin-bottom: 1.5rem;
   color: white;
@@ -126,7 +126,7 @@ const HeadlineSpan = styled.span`
 `;
 
 const Subheadline = styled(motion.p)`
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: white;
   margin-bottom: 2.5rem;
   line-height: 1.6;

@@ -5,14 +5,14 @@ import { motion } from 'framer-motion';
 const WaveDivider = styled.div`
   position: relative;
   width: 100%;
-  height: 150px;
+  height: 100px;
   overflow: hidden;
-  margin-top: -150px;
+  margin-top: -100px;
 
   svg {
     position: absolute;
     width: 100%;
-    height: 150px;
+    height: 100px;
     fill: white;
   }
 
@@ -40,7 +40,7 @@ const WaveDivider = styled.div`
 `;
 
 const FooterSection = styled(BaseSection)`
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
   color: ${({ theme }) => theme.colors.darkPurple};
   background: white;
   position: relative;
@@ -67,7 +67,7 @@ const NewsletterSection = styled.div`
 `;
 
 const NewsletterTitle = styled.h3`
-  font-size: 2rem;
+  font-size: 1.75rem;
   margin-bottom: 1rem;
   color: ${({ theme }) => theme.colors.darkPurple};
   text-align: left;
@@ -84,12 +84,12 @@ const NewsletterForm = styled.form`
 
 const NewsletterInput = styled.input`
   flex: 1;
-  padding: 1rem;
+  padding: 0.75rem;
   border: 1px solid rgba(43, 16, 85, 0.2);
   border-radius: 8px;
   background: rgba(43, 16, 85, 0.05);
   color: ${({ theme }) => theme.colors.darkPurple};
-  font-size: 1rem;
+  font-size: 0.9rem;
   backdrop-filter: blur(10px);
 
   &::placeholder {
@@ -103,12 +103,12 @@ const NewsletterInput = styled.input`
 `;
 
 const SubscribeButton = styled(motion.button)`
-  padding: 1rem 2rem;
+  padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 8px;
   background: linear-gradient(135deg, #4B2094 0%, #2B1055 100%);
   color: white;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;

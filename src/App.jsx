@@ -14,24 +14,35 @@ import Revenues from './pages/Revenues';
 import DeDaS from './pages/DeDaS';
 import AITwin from './pages/AITwin';
 import Footer from './components/Footer';
+import styled from 'styled-components';
+
+const AppContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+`;
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/dedas" element={<DeDaS />} />
-          <Route path="/projects/ai-twin" element={<AITwin />} />
-          <Route path="/revenues" element={<Revenues />} />
-        </Routes>
-      </Router>
-      <Footer />
+      <AppContainer>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/dedas" element={<DeDaS />} />
+            <Route path="/projects/ai-twin" element={<AITwin />} />
+            <Route path="/revenues" element={<Revenues />} />
+          </Routes>
+        </Router>
+        <Footer />
+      </AppContainer>
     </ThemeProvider>
   );
 }
